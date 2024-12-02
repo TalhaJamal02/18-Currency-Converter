@@ -30,7 +30,7 @@ function CurrencyConverter() {
         const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
         const data = await response.json();
         setExchangeRates(data.rates);
-      } catch (error) {
+      } catch {
         setError("Error fetching exchange rates.");
       } finally {
         setLoading(false);
