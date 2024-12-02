@@ -141,7 +141,7 @@ function CurrencyConverter() {
           <CardFooter>
             <Button
               type="button"
-              className="w-full"
+              className="w-full rounded-xl"
               onClick={calculateConvertedAmount}
             >
               Convert
